@@ -60,6 +60,7 @@ def serialize_board(board_obj):
     return board
 
 if __name__ == "__main__":
+<<<<<<< HEAD
     app.run(debug=True)'''
 from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
@@ -142,3 +143,7 @@ def serve_react(path):
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8080))
     app.run(host='0.0.0.0', port=port)
+=======
+    app.run(debug=True)
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 8080)))
+>>>>>>> 8314588c6318098b108ecc0e0cdf2fa2ba3115dc
